@@ -586,9 +586,9 @@ public class PixelsService extends AbstractFileSystemService
             }
         }
 
-        log.info("Pixel buffer file exists returning read-only " +
+        log.info("Pixel buffer file exists returning " +
                  "ROMIO pixel buffer.");
-        return createRomioPixelBuffer(pixelsFilePath, pixels, false);
+        return createRomioPixelBuffer(pixelsFilePath, pixels, write);
     }
 
     /**
